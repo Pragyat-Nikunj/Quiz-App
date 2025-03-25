@@ -1,0 +1,90 @@
+/* === BASIC PAGE RESET & LAYOUT === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container that holds everything centrally */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* === START SCREEN === */
+.hidden {
+  display: none;
+}
+
+/* We'll override for the visible screen in JS */
+#start-screen.visible,
+#quiz-container.visible,
+#result-screen.visible {
+  display: block;
+}
+
+/* === HEADINGS === */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* === BUTTONS === */
+.start-button,
+.restart-button {
+  background-color: #6a0dad; /* Purple */
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.start-button:hover,
+.restart-button:hover {
+  background-color: #8832cc; /* Slightly lighter purple on hover */
+}
+
+/* === QUIZ CARD STYLING === */
+.quiz-card {
+  background-color: #222222;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 300px; /* Fixed width for a neat card look */
+}
+
+/* === ANSWER LIST === */
+ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+li {
+  background-color: #333333;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+li:hover {
+  background-color: rgb(236, 132, 13);
+}
+
+.highlight {
+  background-color: rgb(236, 132, 13);
+}

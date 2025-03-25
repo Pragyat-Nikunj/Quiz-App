@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- START SCREEN -->
+    <div id="start-screen" class="visible">
+      <h1>Quiz App</h1>
+      <button class="start-button" id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-container" class="hidden">
+      <div class="quiz-card" id="quiz-card">
+        <h2 id="question-text"></h2>
+        <ul id="answer-list">
+          <!-- Answers will be injected here by JavaScript -->
+        </ul>
+        <button id="next-btn" class="start-button">Next Question</button>
+      </div>
+    </div>
+
+    <!-- RESULT SCREEN -->
+    <div id="result-screen" class="hidden">
+      <div class="quiz-card">
+        <h1>Quiz App</h1>
+        <h2>Your Score:</h2>
+        <p id="score-text">0 out of 0</p>
+        <button class="restart-button" id="restart-btn">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
